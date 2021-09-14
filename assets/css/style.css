@@ -4,7 +4,16 @@
     box-sizing: border-box;
 }
 
-/* Utility Classes Start */
+body {
+    color: #39a6b2;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+section {
+    padding: 60px;
+}
+
+/* Utility Classes */
 .text-left {
     text-align: left;
 }
@@ -16,12 +25,7 @@
 .flex-row {
     display: flex;
 }
-/* Utility Classes End */
-
-body {
-    color: #39a6b2;
-    font-family: Helvetica, Arial, sans-serif;
-}
+/* End Utility Classes */
 
 /* Header Styles */
 header {
@@ -63,33 +67,7 @@ header nav ul li a {
 }
 /* End Header Styles */
 
-/* Footer Styles */
-footer {
-    background: #fce128;
-    width: 100%;
-    padding: 40px 35px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-footer h2 {
-    color: #024e76;
-    font-size: 30px;
-    margin: 0;
-}
-
-footer div {
-    line-height: 1.5;
-    text-align: right;
-}
-
-footer a {
-    color: #024e76;
-}
-/* End Footer Styles */
-
-/* Hero Styles Start */
+/* Hero Styles */
 .hero {
     background-image: url("../images/hero-bg.jpg");
     background-size: cover;
@@ -153,13 +131,9 @@ footer a {
     padding: 10px 20px;
     font-size: 16px;
 }
-/* Hero Styles End */
+/* End Hero Styles */
 
-/*  Section Styles Start */
-section {
-    padding: 60px;
-}
-
+/*  Section Title Styles */
 .section-title {
     font-size: 55px;
     color: #024e76;
@@ -177,7 +151,9 @@ section {
 .secondary-border {
     border-color: #39a6b2;
 }
+/*  End Section Title Styles */
 
+/* Intro Section Styles */
 .intro p {
     line-height: 1.7;
     color: #39a6b2;
@@ -190,7 +166,9 @@ section {
 .steps {
     background: #fce138;
 }
+/* End Intro Section Styles */
 
+/* Steps Section Styles */
 .step {
     margin: 50px auto;
     padding-bottom: 50px;
@@ -238,7 +216,9 @@ section {
     color: #39a6b2;
     font-size: 18px;
 }
+/* End Steps Section Styles */
 
+/* Trainers Section Styles */
 .trainers {
     width: 100%;
     margin: 0 auto;
@@ -276,7 +256,9 @@ section {
 .trainer-bio p {
     font-size: 17px;
 }
+/* End Trainers Section Styles */
 
+/* Contact Section Styles */
 .contact {
     background: #024e76;
 }
@@ -285,17 +267,22 @@ section {
     color: #fce138;
 }
 
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-info > * {
+    flex: 1;
+    margin: 15px;
+}
+
 .contact-info iframe {
-    width: 400px;
     height: 400px;
 }
 
 .contact-info div {
-    width: 410px;
-    display: inline-block;
-    vertical-align: top;
-    text-align: left;
-    margin: 30px 0 0 60px;
     color: white;
 }
 
@@ -307,11 +294,58 @@ section {
 .contact-info p, .contact-info address {
     margin: 20px 0;
     line-height: 1.5;
-    font-size: 20px;
+    font-size: 16px;
     font-style: normal;
 }
 
 .contact-info a {
     color: #fce138;
 }
-/* Section Styles End */
+
+.contact-form input, .contact-form textarea {
+    border: 1px solid #024e76;
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: #024e76;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.contact-form button {
+    width: 100%;
+    border: none;
+    background: #fce138;
+    color: #024e76;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+}
+/* End Contact Section Styles */
+
+/* Footer Styles */
+footer {
+    background: #fce128;
+    width: 100%;
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer h2 {
+    color: #024e76;
+    font-size: 30px;
+    margin: 0;
+}
+
+footer div {
+    line-height: 1.5;
+    text-align: right;
+}
+
+footer a {
+    color: #024e76;
+}
+/* End Footer Styles */
