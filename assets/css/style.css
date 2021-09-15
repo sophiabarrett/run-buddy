@@ -29,8 +29,14 @@ section {
 
 /* Header Styles */
 header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     padding: 20px 35px;
-    background-color: #39a6b2;
+    background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -75,7 +81,8 @@ header nav ul li a {
 .hero {
     background-image: url("../images/hero-bg.jpg");
     background-size: cover;
-    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -365,6 +372,7 @@ footer a {
 /* MEDIA QUERY FOR SMALL DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
     header {
+        position: relative;
         padding-bottom: 0;
         justify-content: center;
     }
